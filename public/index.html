@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>throughglasss | Premium Editing Assets</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container nav-content">
+        <div class="logo">through<span>glasss</span></div>
+        <ul class="nav-links">
+          <li><a href="#presets">Collections</a></li>
+          <li><a href="#impact">The Impact</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="container">
+        <p class="uppercase tracking-[4px] text-xs text-[#D4AF37] mb-6">
+          Premium Assets
+        </p>
+        <h1>Through the glass, <br />into the <span>soul</span>.</h1>
+        <p>
+          Cinematic color grading tools crafted for storytellers who demand
+          excellence.
+        </p>
+        <a href="#presets" class="btn-primary">Explore Collections</a>
+      </div>
+    </header>
+
+    <section id="presets" class="presets-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Trending Collections</h2>
+          <div class="carousel-nav">
+            <button id="prevBtn" aria-label="Previous">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 12H4M4 12L10 6M4 12L10 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/>
+              </svg>
+            </button>
+            <button id="nextBtn" aria-label="Next">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="carousel-container">
+          <div class="presets-track" id="track">
+            <div class="text-gray-500">Loading inventory...</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="impact" class="impact-section">
+      <div class="container">
+        <div class="text-center mb-12">
+          <h2 class="section-title">The Impact</h2>
+          <p class="text-gray-500 mt-2">Drag to compare raw versus graded.</p>
+        </div>
+        <div class="impact-container" id="impact-slider">
+          <div class="img-background"></div>
+          <div class="img-foreground" id="slider-reveal"></div>
+          <div class="slider-handle" id="slider-knob"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="container grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        <div>
+          <h2 class="text-4xl font-serif text-white mb-6">Let's Create.</h2>
+          <p class="text-gray-400 text-lg leading-relaxed">
+            Have questions about installation or need a custom color profile?
+            Reach out directly. We usually respond within 24 hours.
+          </p>
+          <div class="mt-8 text-[#D4AF37]">support@throughglasss.com</div>
+        </div>
+
+        <form onsubmit="handleContactSubmit(event)">
+          <div class="form-input-group">
+            <input type="text" id="contact-name" placeholder="Name" required class="lux-input" />
+            <input type="email" id="contact-email" placeholder="Email" required class="lux-input" />
+          </div>
+          <textarea id="contact-message" placeholder="How can we help?" rows="3" required class="lux-input"></textarea>
+          <button type="submit" id="send-btn" class="btn-submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="logo mb-4 opacity-50">through<span>glasss</span></div>
+        <p>&copy; 2025 throughglasss. Made for storytellers.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
