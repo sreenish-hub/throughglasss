@@ -6,7 +6,7 @@ const PRESETS_DATA = [
     desc: 'Warm, cinematic color grading for portrait & outdoor storytelling',
     img: '/images/golden-hour.jpg',
     price: '$29',
-    link: 'https://gumroad.com/throughglasss#golden-hour'
+    link: 'https://gumroad.com/throughglasss'
   },
   {
     id: 2,
@@ -14,7 +14,7 @@ const PRESETS_DATA = [
     desc: 'Deep, moody tones perfect for dramatic cinematic looks',
     img: '/images/midnight-blue.jpg',
     price: '$29',
-    link: 'https://gumroad.com/throughglasss#midnight-blue'
+    link: 'https://gumroad.com/throughglasss'
   },
   {
     id: 3,
@@ -22,7 +22,7 @@ const PRESETS_DATA = [
     desc: 'Classic analog film stock emulation for nostalgic aesthetics',
     img: '/images/vintage-film.jpg',
     price: '$29',
-    link: 'https://gumroad.com/throughglasss#vintage-film'
+    link: 'https://gumroad.com/throughglasss'
   }
 ];
 
